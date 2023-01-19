@@ -33,7 +33,7 @@ jobs:
           
       - name: Validate war file
         #run: dir /s '${{ github.workspace }}/target/'
-        run: dir /s 'D:\a\demo48\'
+        run: tree /f '${{ github.workspace }}'
 
   deploy:
     runs-on: windows-latest
