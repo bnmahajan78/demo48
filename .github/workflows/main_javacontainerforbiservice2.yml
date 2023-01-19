@@ -32,7 +32,8 @@ jobs:
           
           
       - name: Validate war file
-        run: dir '${{ github.workspace }}/target/'
+        #run: dir /s '${{ github.workspace }}/target/'
+        run: dir /s 'C:/Users/runneradmin/'
 
   deploy:
     runs-on: windows-latest
