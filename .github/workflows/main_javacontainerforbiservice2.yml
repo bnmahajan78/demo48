@@ -29,7 +29,10 @@ jobs:
         with:
           name: java-app
           path: '${{ github.workspace }}/target/*.war'
-          run: dir '${{ github.workspace }}/target/'
+          
+          
+      - name: Validate war file
+        run: dir '${{ github.workspace }}/target/'
 
   deploy:
     runs-on: windows-latest
